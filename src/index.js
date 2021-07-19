@@ -3,8 +3,8 @@ function eval() {
     return;
 }
 
-function expressionCalculator(expr) {
-    // write your solution here
+function expressionCalculator(expr) {  
+  return Function(`return ${expr}`)()
 }
 
 module.exports = {
